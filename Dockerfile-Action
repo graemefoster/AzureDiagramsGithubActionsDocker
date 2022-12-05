@@ -1,2 +1,2 @@
-FROM ghcr.io/graemefoster/azurediagrams:0.6.5
+FROM ghcr.io/graemefoster/azurediagramsgithubactionsdocker:0.6.28
 

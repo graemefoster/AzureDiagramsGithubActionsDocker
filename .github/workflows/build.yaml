@@ -34,5 +34,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/graemefoster/azurediagrams:latest
-            ghcr.io/graemefoster/azurediagrams:0.6.28
+            ghcr.io/graemefoster/azurediagramsgithubactionsdocker:latest
+            ghcr.io/graemefoster/azurediagramsgithubactionsdocker:0.6.28
