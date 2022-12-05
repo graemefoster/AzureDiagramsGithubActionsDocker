@@ -6,7 +6,7 @@ ADD https://github.com/jgraph/drawio-desktop/releases/download/v17.4.2/drawio-x8
 RUN chmod 777 /drawio/drawio-x86_64-17.4.2.AppImage
 
 # Copy everything
-COPY .entrypoint.sh ./
+COPY ./entrypoint.sh ./
 
 RUN chmod 777 /entrypoint.sh
 
