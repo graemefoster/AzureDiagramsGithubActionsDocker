@@ -35,4 +35,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/graemefoster/azurediagrams:latest
-            ghcr.io/graemefoster/azurediagrams:${{ needs.build-and-package-app.outputs.version }}
+            ghcr.io/graemefoster/azurediagrams:0.6.28
