@@ -1,4 +1,4 @@
-name: 'graemefoster-azurediagrams-action'
+name: 'graemefoster-azurediagrams-docker-action'
 description: 'Runs AzureDiagramGenerator'
 branding:
   icon: 'command'
