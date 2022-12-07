@@ -35,4 +35,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/graemefoster/azurediagramsgithubactionsdocker:latest
-            ghcr.io/graemefoster/azurediagramsgithubactionsdocker:0.6.28
+            ghcr.io/graemefoster/azurediagramsgithubactionsdocker:0.6.30

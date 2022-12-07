@@ -1,4 +1,4 @@
-name: 'graemefoster-azurediagrams-docker-action'
+name: 'azurediagrams-docker-action'
 description: 'Runs AzureDiagramGenerator'
 branding:
   icon: 'command'
@@ -38,7 +38,7 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io//graemefoster/azurediagramsgithubactionsdocker:0.6.28'
+  image: 'docker://ghcr.io//graemefoster/azurediagramsgithubactionsdocker:0.6.30'
   args:
     - "--subscription-id" 
     - "${{ inputs.subscriptionId }}"
