@@ -19,7 +19,7 @@ Here's an example that:
           echo "::add-mask::$token" 
           echo "::set-output name=token::$token"
 
-      - name: graemefoster-azurediagrams-action
+      - name: Generate Diagram
         uses: graemefoster/azurediagrams-docker-action@v0.1.0
         with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
