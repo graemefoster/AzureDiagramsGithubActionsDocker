@@ -21,7 +21,7 @@ jobs:
     steps:
 
       - name: Genereate Diagram
-        uses: graemefoster/azurediagramsgithubactionsdocker@v0.1.1
+        uses: graemefoster/azurediagramsgithubactionsdocker@v0.1.2
         with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resourceGroup: "grf-*"
