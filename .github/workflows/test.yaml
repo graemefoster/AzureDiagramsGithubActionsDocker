@@ -33,7 +33,7 @@ jobs:
           echo "::set-output name=token::$token"
 
       - name: Genereate Diagram
-        uses: graemefoster/azurediagramsgithubactionsdocker@v0.1.0
+        uses: graemefoster/azurediagramsgithubactionsdocker@v0.1.1
         with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resourceGroup: "grf-*"
