@@ -7,7 +7,7 @@
 You need to an AAD token to use AzureResourceMap with at least Reader scope over the resource-groups. 
 Here's an example that:
 - will get a token
-- use the Custom Github Action to generate a diagram
+- use the Custom Github Action to generate an image
 - publish the diagram as an artefact.
 
 
@@ -20,7 +20,7 @@ Here's an example that:
           echo "::set-output name=token::$token"
 
       - name: Generate Diagram
-        uses: graemefoster/azurediagrams-docker-action@v0.1.0
+        uses: graemefoster/azurediagramsgithubactionsdocker@v0.1.2
         with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resourceGroup: "*-grf-*"
