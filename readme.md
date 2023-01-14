@@ -20,7 +20,7 @@ Here's an example that:
           echo "::set-output name=token::$token"
 
       - name: Generate Diagram
-        uses: graemefoster/azurediagramsgithubactionsdocker@v0.1.2
+        uses: graemefoster/azurediagramsgithubactionsdocker@v0.1.3
         with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resourceGroup: "*-grf-*"
