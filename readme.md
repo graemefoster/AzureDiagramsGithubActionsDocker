@@ -20,7 +20,7 @@ Here's an example that:
           echo "token=$token" >> $GITHUB_OUTPUT
 
       - name: Generate Diagram
-        uses: graemefoster/azurediagramsgithubactionsdocker@v0.1.9
+        uses: graemefoster/azurediagramsgithubactionsdocker@v0.1.10
         with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resourceGroup: "*-grf-*"
@@ -30,7 +30,7 @@ Here's an example that:
       - uses: actions/upload-artifact@v3
         with:
           name: diagram
-          path: ./azurediagram.drawio
+          path: ./azurediagram.drawio.png
 ```
 ## Yaml properties
 
