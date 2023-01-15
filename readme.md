@@ -44,7 +44,7 @@ Here's an example that:
 | showInferred      | Yes       | True to infer connections between resources by introspecting appSettings     |
 | showIdentity      | Yes       | True to show User Assigned Managed Identity connections                      |
 | showDiagnostics   | Yes       | True to show diagnostics flows                                               |
-| outputPng         | Yes       | True to export a png of the draw.io diagram                                  |
+| outputFileName    | Yes       | Filename to output drawio file to. Png will have .png suffix                 |
 
 
 ## Output Formats
