@@ -17,7 +17,7 @@ Here's an example that:
         run: |
           token=$(az account get-access-token --query accessToken -o tsv --query "accessToken")
           echo "::add-mask::$token" 
-          echo "::set-output name=token::$token"
+          echo "token=$token" >> $GITHUB_OUTPUT
 
       - name: Generate Diagram
         uses: graemefoster/azurediagramsgithubactionsdocker@v0.1.3
@@ -38,13 +38,13 @@ Here's an example that:
 |:------------------|:----------|:-----------------------------------------------------------------------------|
 | subscriptionId    | Yes       | Subscription Id to run against                                               |
 | resourceGroup     | Yes       | Wildcard enabled resource group name (supports multiple)                     |
-| accessToken       | Yes       | Optional JWT to avoid using CLI credential                                   |
-| condensed         | Yes       | True collapses private endpoints into subnets (can simplify large diagrams)  |
-| showRuntime       | Yes       | True to show runtime flows defined on the control plane                      |
-| showInferred      | Yes       | True to infer connections between resources by introspecting appSettings     |
-| showIdentity      | Yes       | True to show User Assigned Managed Identity connections                      |
-| showDiagnostics   | Yes       | True to show diagnostics flows                                               |
+| accessToken       | Yes       | Azure Resource Manager JWT (see above example)                               |
 | outputFileName    | Yes       | Filename to output drawio file to. Png will have .png suffix                 |
+| condensed         | No        | True collapses private endpoints into subnets (can simplify large diagrams)  |
+| showRuntime       | No        | True to show runtime flows defined on the control plane                      |
+| showInferred      | No        | True to infer connections between resources by introspecting appSettings     |
+| showIdentity      | No        | True to show User Assigned Managed Identity connections                      |
+| showDiagnostics   | No        | True to show diagnostics flows                                               |
 
 
 ## Output Formats
