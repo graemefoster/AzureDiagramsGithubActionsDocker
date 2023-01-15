@@ -38,7 +38,7 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/graemefoster/azurediagrams:0.6.49'
+  image: 'docker://ghcr.io/graemefoster/azurediagrams:0.6.50'
   args:
     - "--subscription-id" 
     - "${{ inputs.subscriptionId }}"
